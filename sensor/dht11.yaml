@@ -12,7 +12,7 @@ sensor:
 
 # Example configuration entry
 mqtt:
-  broker: desktop-atkc6b4.local
+  broker: 34.101.138.199
   port  : 1883
 
 esp8266:

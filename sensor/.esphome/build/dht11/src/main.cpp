@@ -135,7 +135,7 @@ void setup() {
   if (ota_otacomponent->should_enter_safe_mode(10, 300000)) return;
   // sensor:
   // mqtt:
-  //   broker: desktop-atkc6b4.local
+  //   broker: 34.101.138.199
   //   port: 1883
   //   id: mqtt_mqttclientcomponent
   //   username: ''
@@ -171,7 +171,7 @@ void setup() {
   mqtt_mqttclientcomponent = new mqtt::MQTTClientComponent();
   mqtt_mqttclientcomponent->set_component_source("mqtt");
   App.register_component(mqtt_mqttclientcomponent);
-  mqtt_mqttclientcomponent->set_broker_address("desktop-atkc6b4.local");
+  mqtt_mqttclientcomponent->set_broker_address("34.101.138.199");
   mqtt_mqttclientcomponent->set_broker_port(1883);
   mqtt_mqttclientcomponent->set_username("");
   mqtt_mqttclientcomponent->set_password("");
@@ -234,8 +234,8 @@ void setup() {
   //       open_drain: false
   //       pullup: false
   //       pulldown: false
-  //     id: esphome_esp8266_esp8266gpiopin
   //     inverted: false
+  //     id: esphome_esp8266_esp8266gpiopin
   //   temperature:
   //     name: Temperature
   //     disabled_by_default: false
