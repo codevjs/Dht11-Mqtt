@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "neutrondev",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "mosca": "^2.8.3",
     "mqtt": "^4.3.7"
