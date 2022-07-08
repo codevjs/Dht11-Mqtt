@@ -1,4 +1,5 @@
 const mosca   = require("mosca");
+const express = require("express");
 
 const broker  = new mosca.Server({
     port : 1883,
@@ -9,17 +10,26 @@ const broker  = new mosca.Server({
     },
 });
 
+const app = express();
+
+app.use(express.static(__dirname + '/build'));
+
 broker.on("ready", () => {
 
     console.log("Broker Ready");
-})
+});
 
 broker.on("published", (packet) => {
 
     console.log(packet);
-})
+});
 
 app.get("/", (req, res) => {
 
-    res.send("Hello mqtt");
+    res.render('index.html');
+});
+
+app.listen(8080, () => {
+
+    console.log("Server run")
 })

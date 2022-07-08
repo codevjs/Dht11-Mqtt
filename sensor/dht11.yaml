@@ -12,7 +12,7 @@ sensor:
 
 # Example configuration entry
 mqtt:
-  broker: 34.101.138.199
+  broker: 34.101.163.175
   port  : 1883
 
 esp8266:
