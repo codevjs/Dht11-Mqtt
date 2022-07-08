@@ -91,16 +91,16 @@ void setup() {
   //   fast_connect: false
   //   output_power: 20.0
   //   networks:
-  //   - ssid: SMARTSM
-  //     password: Hadescyber2010
+  //   - ssid: Morbius
+  //     password: CAPSLOCK
   //     id: wifi_wifiap_2
   //     priority: 0.0
   //   use_address: dht11.local
   wifi_wificomponent = new wifi::WiFiComponent();
   wifi_wificomponent->set_use_address("dht11.local");
   wifi::WiFiAP wifi_wifiap_2 = wifi::WiFiAP();
-  wifi_wifiap_2.set_ssid("SMARTSM");
-  wifi_wifiap_2.set_password("Hadescyber2010");
+  wifi_wifiap_2.set_ssid("Morbius");
+  wifi_wifiap_2.set_password("CAPSLOCK");
   wifi_wifiap_2.set_priority(0.0f);
   wifi_wificomponent->add_sta(wifi_wifiap_2);
   wifi::WiFiAP wifi_wifiap = wifi::WiFiAP();
@@ -234,8 +234,8 @@ void setup() {
   //       open_drain: false
   //       pullup: false
   //       pulldown: false
-  //     id: esphome_esp8266_esp8266gpiopin
   //     inverted: false
+  //     id: esphome_esp8266_esp8266gpiopin
   //   temperature:
   //     name: Temperature
   //     disabled_by_default: false

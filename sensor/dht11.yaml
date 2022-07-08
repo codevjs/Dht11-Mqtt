@@ -29,8 +29,8 @@ ota:
   password: ""
 
 wifi:
-  ssid: "SMARTSM"
-  password: "Hadescyber2010"
+  ssid: "Morbius"
+  password: "CAPSLOCK"
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
