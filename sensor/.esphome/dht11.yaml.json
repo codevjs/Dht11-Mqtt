@@ -1,0 +1,32 @@
+{
+  "storage_version": 1,
+  "name": "dht11",
+  "comment": null,
+  "esphome_version": "2022.4.0",
+  "src_version": 1,
+  "address": "dht11.local",
+  "web_port": null,
+  "esp_platform": "ESP8266",
+  "build_path": ".esphome/build/dht11",
+  "firmware_bin_path": ".esphome/build/dht11/.pioenvs/dht11/firmware.bin",
+  "loaded_integrations": [
+    "api",
+    "async_tcp",
+    "captive_portal",
+    "dht",
+    "esp8266",
+    "esphome",
+    "json",
+    "logger",
+    "md5",
+    "mdns",
+    "mqtt",
+    "network",
+    "ota",
+    "preferences",
+    "sensor",
+    "socket",
+    "web_server_base",
+    "wifi"
+  ]
+}
